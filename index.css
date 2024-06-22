@@ -170,3 +170,25 @@ main {
     border: 3px solid var(--Moderateviolet);
 }
 
+@media only screen and (max-width:400px){
+    body {
+        display: inline-block;
+        height: 290vh;
+    }
+
+    main {
+        width: 350px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 410px 250px 230px 380px 1fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "d"
+        "e"
+        "c";
+        gap: 25px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+}
